@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Build Maven'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: 'master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Thrishank99/SpringbootDockerJenkinPipelineApp.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: 'master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Thrishankgit99/SpringbootDockerJenkinPipelineProject.git']]])
                 bat 'mvn clean install'
             }
         }
